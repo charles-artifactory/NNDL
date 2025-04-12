@@ -1,0 +1,5 @@
+Model,Test Accuracy,Best Epoch
+Basic CNN,79.68,91
+Deep CNN,86.19,95
+ResNet,86.53,77
+Ensemble,88.47,N/A
