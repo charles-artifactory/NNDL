@@ -1,0 +1,9 @@
+Model,Accuracy
+cifar10_fcnn_LabelSmoothingLoss_Adamax,55.94
+cifar10_fcnn_CrossEntropyLoss_Adamax,54.7
+cifar10_fcnn_LabelSmoothingLoss_Adagrad,54.61
+cifar10_fcnn_LabelSmoothingLoss_SGD,54.58
+cifar10_fcnn_CrossEntropyLoss_Adam,54.510000000000005
+cifar10_fcnn_CrossEntropyLoss_SGD,54.50000000000001
+cifar10_fcnn_CrossEntropyLoss_Adagrad,54.410000000000004
+cifar10_fcnn_LabelSmoothingLoss_Adam,53.769999999999996
