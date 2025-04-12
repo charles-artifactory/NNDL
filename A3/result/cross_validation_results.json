@@ -1,0 +1,92 @@
+{
+  "{'dropout_rate': 0.2, 'normalization': 'batch', 'num_filters_1': 32, 'num_filters_2': 64}": {
+    "params": "{'dropout_rate': 0.2, 'normalization': 'batch', 'num_filters_1': 32, 'num_filters_2': 64}",
+    "fold_accuracies": [
+      43.719535058117735,
+      41.31983502062242,
+      43.92348087021755
+    ],
+    "avg_accuracy": 42.987616982985905
+  },
+  "{'dropout_rate': 0.2, 'normalization': 'instance', 'num_filters_1': 32, 'num_filters_2': 64}": {
+    "params": "{'dropout_rate': 0.2, 'normalization': 'instance', 'num_filters_1': 32, 'num_filters_2': 64}",
+    "fold_accuracies": [
+      41.35733033370828,
+      39.63254593175853,
+      39.90997749437359
+    ],
+    "avg_accuracy": 40.299951253280135
+  },
+  "{'dropout_rate': 0.2, 'normalization': 'layer', 'num_filters_1': 32, 'num_filters_2': 64}": {
+    "params": "{'dropout_rate': 0.2, 'normalization': 'layer', 'num_filters_1': 32, 'num_filters_2': 64}",
+    "fold_accuracies": [
+      41.91976002999625,
+      41.01987251593551,
+      39.122280570142536
+    ],
+    "avg_accuracy": 40.68730437202476
+  },
+  "{'dropout_rate': 0.2, 'normalization': 'group', 'num_filters_1': 32, 'num_filters_2': 64}": {
+    "params": "{'dropout_rate': 0.2, 'normalization': 'group', 'num_filters_1': 32, 'num_filters_2': 64}",
+    "fold_accuracies": [
+      41.39482564679415,
+      42.10723659542557,
+      41.74793698424606
+    ],
+    "avg_accuracy": 41.74999974215526
+  },
+  "{'dropout_rate': 0.2, 'normalization': 'none', 'num_filters_1': 32, 'num_filters_2': 64}": {
+    "params": "{'dropout_rate': 0.2, 'normalization': 'none', 'num_filters_1': 32, 'num_filters_2': 64}",
+    "fold_accuracies": [
+      43.869516310461194,
+      41.61979752530934,
+      42.985746436609155
+    ],
+    "avg_accuracy": 42.82502009079323
+  },
+  "{'dropout_rate': 0.5, 'normalization': 'batch', 'num_filters_1': 32, 'num_filters_2': 64}": {
+    "params": "{'dropout_rate': 0.5, 'normalization': 'batch', 'num_filters_1': 32, 'num_filters_2': 64}",
+    "fold_accuracies": [
+      37.60779902512186,
+      41.544806899137605,
+      37.92198049512378
+    ],
+    "avg_accuracy": 39.024862139794415
+  },
+  "{'dropout_rate': 0.5, 'normalization': 'instance', 'num_filters_1': 32, 'num_filters_2': 64}": {
+    "params": "{'dropout_rate': 0.5, 'normalization': 'instance', 'num_filters_1': 32, 'num_filters_2': 64}",
+    "fold_accuracies": [
+      27.74653168353956,
+      26.771653543307085,
+      29.294823705926483
+    ],
+    "avg_accuracy": 27.93766964425771
+  },
+  "{'dropout_rate': 0.5, 'normalization': 'layer', 'num_filters_1': 32, 'num_filters_2': 64}": {
+    "params": "{'dropout_rate': 0.5, 'normalization': 'layer', 'num_filters_1': 32, 'num_filters_2': 64}",
+    "fold_accuracies": [
+      31.608548931383577,
+      25.534308211473565,
+      34.808702175543885
+    ],
+    "avg_accuracy": 30.65051977280034
+  },
+  "{'dropout_rate': 0.5, 'normalization': 'group', 'num_filters_1': 32, 'num_filters_2': 64}": {
+    "params": "{'dropout_rate': 0.5, 'normalization': 'group', 'num_filters_1': 32, 'num_filters_2': 64}",
+    "fold_accuracies": [
+      36.37045369328834,
+      30.2212223472066,
+      34.54613653413353
+    ],
+    "avg_accuracy": 33.71260419154282
+  },
+  "{'dropout_rate': 0.5, 'normalization': 'none', 'num_filters_1': 32, 'num_filters_2': 64}": {
+    "params": "{'dropout_rate': 0.5, 'normalization': 'none', 'num_filters_1': 32, 'num_filters_2': 64}",
+    "fold_accuracies": [
+      36.782902137232846,
+      38.39520059992501,
+      41.59789947486872
+    ],
+    "avg_accuracy": 38.925334070675525
+  }
+}

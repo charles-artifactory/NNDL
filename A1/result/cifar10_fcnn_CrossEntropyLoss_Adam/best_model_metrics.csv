@@ -1,0 +1,2 @@
+epoch,train_accuracy,val_accuracy,test_accuracy,class_accuracies
+47,97.1225,54.19,54.51,"{'plane': 66.5, 'car': 67.6, 'bird': 42.9, 'cat': 34.6, 'deer': 43.5, 'dog': 44.3, 'frog': 60.6, 'horse': 59.7, 'ship': 66.4, 'truck': 59.0}"

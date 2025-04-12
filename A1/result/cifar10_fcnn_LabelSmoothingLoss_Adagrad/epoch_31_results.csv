@@ -1,0 +1,11 @@
+Class,Accuracy
+plane,65.0
+car,61.0
+bird,41.0
+cat,35.2
+deer,45.5
+dog,51.1
+frog,58.2
+horse,62.0
+ship,63.1
+truck,59.6
