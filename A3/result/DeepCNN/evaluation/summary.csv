@@ -1,0 +1,2 @@
+Model,Accuracy,Macro Avg Precision,Macro Avg Recall,Macro Avg F1-Score,Weighted Avg Precision,Weighted Avg Recall,Weighted Avg F1-Score
+DeepCNN,86.19,0.8622169620331134,0.8619000000000001,0.8619865750390071,0.8622169620331133,0.8619,0.861986575039007

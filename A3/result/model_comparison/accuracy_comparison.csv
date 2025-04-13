@@ -1,0 +1,5 @@
+Model,Accuracy
+Ensemble Model,88.47
+ResNet,86.53
+DeepCNN,86.19
+BasicCNN_BestParams,79.67999999999999

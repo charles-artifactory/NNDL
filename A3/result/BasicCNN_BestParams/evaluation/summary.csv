@@ -1,0 +1,2 @@
+Model,Accuracy,Macro Avg Precision,Macro Avg Recall,Macro Avg F1-Score,Weighted Avg Precision,Weighted Avg Recall,Weighted Avg F1-Score
+BasicCNN_BestParams,79.67999999999999,0.7956023506278324,0.7968,0.7953627327058228,0.7956023506278324,0.7968,0.7953627327058227

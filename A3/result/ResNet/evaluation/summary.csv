@@ -1,0 +1,2 @@
+Model,Accuracy,Macro Avg Precision,Macro Avg Recall,Macro Avg F1-Score,Weighted Avg Precision,Weighted Avg Recall,Weighted Avg F1-Score
+ResNet,86.53,0.8651677046704525,0.8653000000000001,0.8651095489571643,0.8651677046704525,0.8653,0.8651095489571644
