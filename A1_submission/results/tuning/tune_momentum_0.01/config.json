@@ -1,0 +1,16 @@
+{
+  "id": "tune_momentum_0.01",
+  "optimizer": "momentum",
+  "hidden_sizes": [
+    128,
+    64
+  ],
+  "loss": "cross_entropy",
+  "smoothing": 0.0,
+  "l2": 0.0,
+  "dropout": 0.0,
+  "learning_rate": 0.01,
+  "seed": 42,
+  "epochs": 3,
+  "batch_size": 128
+}

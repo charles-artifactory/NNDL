@@ -1,0 +1,10 @@
+{
+  "experiment": "smooth_adam",
+  "seed": 44,
+  "best_epoch": 12,
+  "validation_accuracy": 0.9809,
+  "validation_cross_entropy": 0.1682954137802124,
+  "train_accuracy": 0.9981,
+  "seconds": 4.2652221659664065,
+  "learning_rate": 0.001
+}

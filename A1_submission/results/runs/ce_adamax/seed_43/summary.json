@@ -1,0 +1,10 @@
+{
+  "experiment": "ce_adamax",
+  "seed": 43,
+  "best_epoch": 12,
+  "validation_accuracy": 0.9756,
+  "validation_cross_entropy": 0.08653326512575149,
+  "train_accuracy": 0.99754,
+  "seconds": 3.3132466659881175,
+  "learning_rate": 0.003
+}

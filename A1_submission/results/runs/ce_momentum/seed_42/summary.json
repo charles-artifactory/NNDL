@@ -1,0 +1,10 @@
+{
+  "experiment": "ce_momentum",
+  "seed": 42,
+  "best_epoch": 10,
+  "validation_accuracy": 0.9758,
+  "validation_cross_entropy": 0.09294731689691543,
+  "train_accuracy": 0.99582,
+  "seconds": 2.5403416249901056,
+  "learning_rate": 0.03
+}

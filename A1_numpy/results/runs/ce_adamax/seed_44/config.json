@@ -1,0 +1,16 @@
+{
+  "id": "ce_adamax",
+  "optimizer": "adamax",
+  "hidden_sizes": [
+    128,
+    64
+  ],
+  "loss": "cross_entropy",
+  "smoothing": 0.0,
+  "l2": 0.0,
+  "dropout": 0.0,
+  "learning_rate": 0.003,
+  "seed": 44,
+  "epochs": 12,
+  "batch_size": 128
+}

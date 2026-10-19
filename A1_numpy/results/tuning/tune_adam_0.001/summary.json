@@ -1,0 +1,10 @@
+{
+  "experiment": "tune_adam_0.001",
+  "seed": 42,
+  "best_epoch": 3,
+  "validation_accuracy": 0.9663,
+  "validation_cross_entropy": 0.11097828149795533,
+  "train_accuracy": 0.97772,
+  "seconds": 0.8526379160466604,
+  "learning_rate": 0.001
+}

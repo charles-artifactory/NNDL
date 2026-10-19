@@ -1,0 +1,10 @@
+{
+  "experiment": "ce_adam",
+  "seed": 43,
+  "best_epoch": 9,
+  "validation_accuracy": 0.9765,
+  "validation_cross_entropy": 0.08366392767429352,
+  "train_accuracy": 0.99538,
+  "seconds": 3.7141295839683153,
+  "learning_rate": 0.001
+}

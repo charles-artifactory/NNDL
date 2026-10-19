@@ -1,0 +1,18 @@
+{
+  "selected_experiment": "smooth_adam",
+  "selected_seed": 42,
+  "validation_mean_accuracy": {
+    "ce_sgd": 0.9713333333333333,
+    "ce_momentum": 0.9763666666666667,
+    "ce_adagrad": 0.9754333333333333,
+    "ce_adam": 0.9755333333333333,
+    "ce_adamax": 0.9760666666666666,
+    "mse_adam": 0.9748,
+    "smooth_adam": 0.9804333333333334,
+    "l2_adam": 0.9768,
+    "dropout_adam": 0.9768,
+    "linear_adam": 0.9202333333333333
+  },
+  "selection_rule": "maximum mean validation accuracy; first listed experiment breaks ties",
+  "frozen_utc": "2026-10-19T03:22:50.318745+00:00"
+}

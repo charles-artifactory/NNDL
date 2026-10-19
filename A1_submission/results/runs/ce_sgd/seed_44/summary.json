@@ -1,0 +1,10 @@
+{
+  "experiment": "ce_sgd",
+  "seed": 44,
+  "best_epoch": 12,
+  "validation_accuracy": 0.9717,
+  "validation_cross_entropy": 0.09640286116600037,
+  "train_accuracy": 0.98828,
+  "seconds": 2.5188650829950348,
+  "learning_rate": 0.1
+}

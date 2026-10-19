@@ -1,0 +1,10 @@
+{
+  "experiment": "tune_adagrad_0.03",
+  "seed": 42,
+  "best_epoch": 3,
+  "validation_accuracy": 0.9659,
+  "validation_cross_entropy": 0.11570826550722123,
+  "train_accuracy": 0.9768,
+  "seconds": 0.7644866670016199,
+  "learning_rate": 0.03
+}

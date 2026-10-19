@@ -1,0 +1,10 @@
+{
+  "experiment": "tune_sgd_0.1",
+  "seed": 42,
+  "best_epoch": 3,
+  "validation_accuracy": 0.9443,
+  "validation_cross_entropy": 0.18661050896644593,
+  "train_accuracy": 0.95418,
+  "seconds": 0.6210472080274485,
+  "learning_rate": 0.1
+}

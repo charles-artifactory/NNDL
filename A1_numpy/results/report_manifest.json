@@ -1,0 +1,10 @@
+{
+  "report": "../REPORT.md",
+  "figures": [
+    "classifiers.png",
+    "confusion_matrix.png",
+    "optimizers.png",
+    "regularization.png",
+    "test_accuracy.png"
+  ]
+}

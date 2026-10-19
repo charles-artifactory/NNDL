@@ -1,0 +1,29 @@
+{
+  "dataset": "MNIST",
+  "split_seed": 2026,
+  "validation_size": 10000,
+  "seeds": [42, 43, 44],
+  "hidden_sizes": [128, 64],
+  "epochs": 12,
+  "batch_size": 128,
+  "tuning_epochs": 3,
+  "learning_rates": {
+    "sgd": [0.03, 0.1],
+    "momentum": [0.01, 0.03],
+    "adagrad": [0.01, 0.03],
+    "adam": [0.0003, 0.001],
+    "adamax": [0.001, 0.003]
+  },
+  "experiments": [
+    {"id": "ce_sgd", "optimizer": "sgd"},
+    {"id": "ce_momentum", "optimizer": "momentum"},
+    {"id": "ce_adagrad", "optimizer": "adagrad"},
+    {"id": "ce_adam", "optimizer": "adam"},
+    {"id": "ce_adamax", "optimizer": "adamax"},
+    {"id": "mse_adam", "optimizer": "adam", "loss": "mse"},
+    {"id": "smooth_adam", "optimizer": "adam", "smoothing": 0.1},
+    {"id": "l2_adam", "optimizer": "adam", "l2": 0.0001},
+    {"id": "dropout_adam", "optimizer": "adam", "dropout": 0.2},
+    {"id": "linear_adam", "optimizer": "adam", "hidden_sizes": []}
+  ]
+}

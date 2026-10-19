@@ -1,0 +1,136 @@
+{
+  "signature": "b9db12a70e67f6627f6e1acbf41cda09a7b96b16af48496d5c6c999f9617fdeb",
+  "settings": {
+    "dataset": "MNIST",
+    "split_seed": 2026,
+    "validation_size": 10000,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "hidden_sizes": [
+      128,
+      64
+    ],
+    "epochs": 12,
+    "batch_size": 128,
+    "tuning_epochs": 3,
+    "learning_rates": {
+      "sgd": [
+        0.03,
+        0.1
+      ],
+      "momentum": [
+        0.01,
+        0.03
+      ],
+      "adagrad": [
+        0.01,
+        0.03
+      ],
+      "adam": [
+        0.0003,
+        0.001
+      ],
+      "adamax": [
+        0.001,
+        0.003
+      ]
+    },
+    "experiments": [
+      {
+        "id": "ce_sgd",
+        "optimizer": "sgd"
+      },
+      {
+        "id": "ce_momentum",
+        "optimizer": "momentum"
+      },
+      {
+        "id": "ce_adagrad",
+        "optimizer": "adagrad"
+      },
+      {
+        "id": "ce_adam",
+        "optimizer": "adam"
+      },
+      {
+        "id": "ce_adamax",
+        "optimizer": "adamax"
+      },
+      {
+        "id": "mse_adam",
+        "optimizer": "adam",
+        "loss": "mse"
+      },
+      {
+        "id": "smooth_adam",
+        "optimizer": "adam",
+        "smoothing": 0.1
+      },
+      {
+        "id": "l2_adam",
+        "optimizer": "adam",
+        "l2": 0.0001
+      },
+      {
+        "id": "dropout_adam",
+        "optimizer": "adam",
+        "dropout": 0.2
+      },
+      {
+        "id": "linear_adam",
+        "optimizer": "adam",
+        "hidden_sizes": []
+      }
+    ]
+  },
+  "source_sha256": {
+    "__init__.py": "50ac55235a45eeb0dcbff345dcf36c878a41b51ceb93823b982430acb1760ae4",
+    "data.py": "2f7e10b581b71d0ecac922bb0032c179841923f1022cd1b61c4766e2662df59b",
+    "experiment.py": "5c7c8b193453d3b8081c4db8f59527c1501e3c2595dce1c42d2e28d29a2cfea2",
+    "metrics.py": "bb07c84fe360b0084e7bc4cb01000596ec29e2aaa76c47a4e48472d8e18bdd37",
+    "network.py": "5678da17179e711616784856433c8f2b96a02aa9e992f0e7def0152b9945c9d4",
+    "optim.py": "80cc6246d1dbdfb2d3b7ae7d9cb1a2856fbcaafa9885d23226cd8ad8f96e68fa"
+  },
+  "python": "3.11.14 (main, Oct 10 2025, 12:55:50) [Clang 20.1.4 ]",
+  "numpy": "2.4.6",
+  "platform": "macOS-15.2-arm64-arm-64bit",
+  "executable": "/Users/zhaozheyun/Code/GitHub/NNDL/A1_numpy/.venv/bin/python",
+  "base_prefix": "/Users/zhaozheyun/.local/share/uv/python/cpython-3.11-macos-aarch64-none",
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "started_utc": "2026-10-19T03:21:03.863506+00:00",
+  "status": "complete",
+  "dataset_md5": {
+    "train-images-idx3-ubyte.gz": "f68b3c2dcbeaaa9fbdd348bbdeb94873",
+    "train-labels-idx1-ubyte.gz": "d53e105ee54ea40749a09fcbcd1e9432",
+    "t10k-images-idx3-ubyte.gz": "9fb629c4189551a2d022fa330f9573f3",
+    "t10k-labels-idx1-ubyte.gz": "ec29112dd5afa0611ce80d1b7f02629c"
+  },
+  "completed_utc": "2026-10-19T03:22:53.155285+00:00",
+  "train_size": 50000,
+  "validation_size": 10000,
+  "test_size": 10000,
+  "training_source_sha256": {
+    "__init__.py": "50ac55235a45eeb0dcbff345dcf36c878a41b51ceb93823b982430acb1760ae4",
+    "data.py": "2f7e10b581b71d0ecac922bb0032c179841923f1022cd1b61c4766e2662df59b",
+    "experiment.py": "5c7c8b193453d3b8081c4db8f59527c1501e3c2595dce1c42d2e28d29a2cfea2",
+    "metrics.py": "bb07c84fe360b0084e7bc4cb01000596ec29e2aaa76c47a4e48472d8e18bdd37",
+    "network.py": "40333b8a7960d2d107cea8549b523e7dc2871f2856a14c45e5747a39941c82c5",
+    "optim.py": "80cc6246d1dbdfb2d3b7ae7d9cb1a2856fbcaafa9885d23226cd8ad8f96e68fa"
+  },
+  "training_signature": "1cbc06bebf6d8a6933de1db9648384cd5c729ab82a48f32b5e795abcbc0a1241",
+  "post_training_source_changes": [
+    {
+      "file": "network.py",
+      "old_sha256": "40333b8a7960d2d107cea8549b523e7dc2871f2856a14c45e5747a39941c82c5",
+      "new_sha256": "5678da17179e711616784856433c8f2b96a02aa9e992f0e7def0152b9945c9d4",
+      "reason": "Correct initialization comment: output variance is 1/fan_in. AST unchanged; numerical implementation and trained parameters unchanged."
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "experiment": "mse_adam",
+  "seed": 44,
+  "best_epoch": 11,
+  "validation_accuracy": 0.9745,
+  "validation_cross_entropy": 0.0923932935476303,
+  "train_accuracy": 0.99308,
+  "seconds": 3.649707875039894,
+  "learning_rate": 0.001
+}

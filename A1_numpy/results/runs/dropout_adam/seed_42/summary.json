@@ -1,0 +1,10 @@
+{
+  "experiment": "dropout_adam",
+  "seed": 42,
+  "best_epoch": 11,
+  "validation_accuracy": 0.9756,
+  "validation_cross_entropy": 0.08293815238475799,
+  "train_accuracy": 0.99228,
+  "seconds": 4.215602958982345,
+  "learning_rate": 0.001
+}

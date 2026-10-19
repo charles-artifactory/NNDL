@@ -1,0 +1,10 @@
+{
+  "experiment": "l2_adam",
+  "seed": 44,
+  "best_epoch": 8,
+  "validation_accuracy": 0.9756,
+  "validation_cross_entropy": 0.08497023832798004,
+  "train_accuracy": 0.9931,
+  "seconds": 3.6502449580002576,
+  "learning_rate": 0.001
+}

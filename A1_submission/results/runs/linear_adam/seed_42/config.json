@@ -1,0 +1,13 @@
+{
+  "id": "linear_adam",
+  "optimizer": "adam",
+  "hidden_sizes": [],
+  "loss": "cross_entropy",
+  "smoothing": 0.0,
+  "l2": 0.0,
+  "dropout": 0.0,
+  "learning_rate": 0.001,
+  "seed": 42,
+  "epochs": 12,
+  "batch_size": 128
+}

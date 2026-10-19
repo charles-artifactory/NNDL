@@ -1,0 +1,12 @@
+{
+  "source_matches_training_manifest": true,
+  "final_runs_checked": 30,
+  "all_selected_epochs_match_validation_rule": true,
+  "all_confusion_matrices_match_reported_accuracy": true,
+  "all_checkpoints_load_without_pickle": true,
+  "split_disjoint_and_complete": true,
+  "selected_model_retrained_identically": true,
+  "reproduced_experiment": "smooth_adam",
+  "reproduced_seed": 42,
+  "inference_cli_samples_checked": 8
+}

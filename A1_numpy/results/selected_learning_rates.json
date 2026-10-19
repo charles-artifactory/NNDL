@@ -1,0 +1,7 @@
+{
+  "sgd": 0.1,
+  "momentum": 0.03,
+  "adagrad": 0.03,
+  "adam": 0.001,
+  "adamax": 0.003
+}

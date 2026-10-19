@@ -1,0 +1,10 @@
+{
+  "experiment": "tune_momentum_0.03",
+  "seed": 42,
+  "best_epoch": 3,
+  "validation_accuracy": 0.967,
+  "validation_cross_entropy": 0.11490301431417466,
+  "train_accuracy": 0.97756,
+  "seconds": 0.6633618340129033,
+  "learning_rate": 0.03
+}

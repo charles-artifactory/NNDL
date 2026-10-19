@@ -1,0 +1,10 @@
+{
+  "experiment": "ce_adagrad",
+  "seed": 43,
+  "best_epoch": 10,
+  "validation_accuracy": 0.9758,
+  "validation_cross_entropy": 0.0896892393708229,
+  "train_accuracy": 0.99534,
+  "seconds": 2.9036316669662483,
+  "learning_rate": 0.03
+}
