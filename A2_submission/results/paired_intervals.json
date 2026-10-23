@@ -1,0 +1,23 @@
+{
+  "Cutout：干净图像": {
+    "delta_pp": -0.5,
+    "lower_pp": -1.10025,
+    "upper_pp": 0.08,
+    "resamples": 2000,
+    "scope": "paired test-image sampling; conditional on trained models; not seed uncertainty"
+  },
+  "Cutout：遮挡图像": {
+    "delta_pp": 6.38,
+    "lower_pp": 5.5897499999999996,
+    "upper_pp": 7.140249999999999,
+    "resamples": 2000,
+    "scope": "paired test-image sampling; conditional on trained models; not seed uncertainty"
+  },
+  "集成相对浅层模型：干净图像": {
+    "delta_pp": 6.75,
+    "lower_pp": 6.179749999999999,
+    "upper_pp": 7.340000000000001,
+    "resamples": 2000,
+    "scope": "paired test-image sampling; conditional on trained models; not seed uncertainty"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "source": "https://s3.amazonaws.com/fast-ai-imageclas/cifar10.tgz",
+  "archive_sha256": "637c5814e11aefcb6ee76d5f59c67ddc8de7f5b5077502a195b0833d1e3e4441",
+  "format": "lossless RGB PNG; ordered by declared class then filename",
+  "classes": [
+    "airplane",
+    "automobile",
+    "bird",
+    "cat",
+    "deer",
+    "dog",
+    "frog",
+    "horse",
+    "ship",
+    "truck"
+  ],
+  "train_count": 50000,
+  "test_count": 10000,
+  "per_train_class": 5000,
+  "per_test_class": 1000,
+  "image_shape": [
+    32,
+    32,
+    3
+  ]
+}

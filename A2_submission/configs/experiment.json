@@ -1,0 +1,18 @@
+{
+  "seed": 42,
+  "device": "auto",
+  "threads": 4,
+  "batch_size": 256,
+  "epochs": 20,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0005,
+  "width": 32,
+  "cv_samples": 9000,
+  "cv_folds": 3,
+  "cv_epochs": 3,
+  "cv_batch_size": 256,
+  "normalizations": ["none", "batch", "instance", "layer", "group"],
+  "dropout_rates": [0.0, 0.2, 0.5],
+  "ensemble_members": ["selected", "deep", "residual_cutout"],
+  "occlusion_size": 8
+}

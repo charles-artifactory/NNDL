@@ -1,0 +1,8 @@
+{
+  "archive_sha256": "637c5814e11aefcb6ee76d5f59c67ddc8de7f5b5077502a195b0833d1e3e4441",
+  "training_cache_sha256": "7d3c81d1ca838d53bae686156b07af25a0c5c304016e6d4ca40799e4ae663d9e",
+  "rebuilt_images_equal": true,
+  "rebuilt_labels_equal": true,
+  "images_checked": 60000,
+  "preparation": "cifar10_lab.prepare.prepare; one-pass archive decoding"
+}

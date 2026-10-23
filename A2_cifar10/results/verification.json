@@ -1,0 +1,690 @@
+{
+  "status": "passed",
+  "checks": [
+    "stratified disjoint split",
+    "CV restricted to train subset",
+    "CV selection recomputed",
+    "all CV fold histories complete and consistent",
+    "all final training histories complete",
+    "checkpoint epoch selected by validation",
+    "prediction shape and probability sum",
+    "confusion matrices and macro F1 independently recomputed",
+    "equal-weight ensemble recomputed",
+    "CPU checkpoint inference agrees with saved predictions for 32 fixed images",
+    "nine PNGs decoded",
+    "notebook code compiled"
+  ],
+  "final_models": 9,
+  "test_images": 10000,
+  "requirement_coverage": {
+    "basic_cifar10_cnn": {
+      "status": "complete",
+      "evidence": [
+        "src/cifar10_lab/models.py",
+        "results/test_metrics.json",
+        "REPORT.md"
+      ]
+    },
+    "basic_dropout_and_normalization": {
+      "status": "complete",
+      "normalizations": [
+        "none",
+        "batch",
+        "instance",
+        "layer",
+        "group"
+      ],
+      "dropout_rates": [
+        0.0,
+        0.2,
+        0.5
+      ],
+      "evidence": [
+        "results/cross_validation.json",
+        "results/runs/dropout_variant/",
+        "REPORT.md"
+      ]
+    },
+    "basic_cross_validation": {
+      "status": "complete",
+      "configurations": 15,
+      "completed_folds": 45,
+      "evidence": [
+        "results/cv/",
+        "results/selection.json",
+        "REPORT.md"
+      ]
+    },
+    "bonus_performance_methods": {
+      "status": "complete",
+      "methods": [
+        "depth",
+        "residual",
+        "cutout",
+        "ensemble"
+      ],
+      "evidence": [
+        "results/model_comparison.csv",
+        "REPORT.md"
+      ]
+    },
+    "bonus_kernel_visualization": {
+      "status": "complete",
+      "kernel_sizes": [
+        3,
+        5,
+        7
+      ],
+      "evidence": [
+        "figures/kernel_weights.png",
+        "figures/features_early.png",
+        "figures/features_late.png",
+        "figures/input_sensitivity.png",
+        "results/feature_analysis.json",
+        "REPORT.md"
+      ]
+    },
+    "bonus_limitations_and_solutions": {
+      "status": "complete",
+      "evidence": [
+        "results/paired_intervals.json",
+        "figures/confusion_matrix.png",
+        "figures/misclassifications.png",
+        "REPORT.md"
+      ]
+    }
+  },
+  "notebook_executed_cells": 9,
+  "source_sha256": {
+    "src/cifar10_lab/models.py": "b2eed905c3b2f2ca7aa86bb3beb57d74fd2d6a38169965aaac25fb92749a89b3",
+    "src/cifar10_lab/__init__.py": "a53968cf237e0b2071ae89a4f86d4e73c54ae80ca5389ecc448a44fb221994a2",
+    "src/cifar10_lab/experiment.py": "658db0b70201b5f06f9f1c8513bbba22e3bb4b8fe2c7e223240370a9fb5df037",
+    "src/cifar10_lab/verify.py": "35d41e47610955f0ee476e86815a7766bd48fae4d7f0020d245a3ce17cf74a5d",
+    "src/cifar10_lab/report.py": "feeab113cb4d9b4688a45d2b8a620c7a3b6cb2dd0f7a3924e4b7793186b2c954",
+    "src/cifar10_lab/prepare.py": "fd5ea9cbefcca5a0496dd94213e294516d6ab0b6f427649dafb159079beeeba2",
+    "src/cifar10_lab/data.py": "9276b14f86b59816f35892802170f140b9f7cb427ce2d91010c4ea19d8ffe0a7"
+  },
+  "figures": [
+    "accuracy_comparison.png",
+    "confusion_matrix.png",
+    "cross_validation.png",
+    "features_early.png",
+    "features_late.png",
+    "input_sensitivity.png",
+    "kernel_weights.png",
+    "learning_curves.png",
+    "misclassifications.png"
+  ],
+  "submission_recheck": {
+    "date_local": "2026-10-22",
+    "timezone": "Asia/Shanghai",
+    "status": "passed",
+    "missing_assignment_requirements": [],
+    "unit_tests_passed": 17,
+    "notebook": {
+      "code_cells_executed": 9,
+      "metrics_match_saved_results": true,
+      "source_cells_preserved_during_execution": true,
+      "cached_outputs_refreshed": true,
+      "project_discovery_from_repository_and_project": true
+    },
+    "numerical_checks": {
+      "status": "passed",
+      "dataset_archive_and_cache_hashes": "passed",
+      "split_and_cv_folds_regenerated": true,
+      "cv_checkpoints_checked": 45,
+      "inference_images_per_model_and_condition": 100,
+      "inference_conditions": [
+        "clean",
+        "occluded"
+      ],
+      "inference_max_probability_errors": {
+        "baseline/clean": 2.086162567138672e-06,
+        "baseline/occluded": 2.384185791015625e-06,
+        "selected/clean": 2.086162567138672e-06,
+        "selected/occluded": 4.231929779052734e-06,
+        "dropout_variant/clean": 3.725290298461914e-06,
+        "dropout_variant/occluded": 2.9206275939941406e-06,
+        "no_normalization/clean": 3.606081008911133e-06,
+        "no_normalization/occluded": 1.9371509552001953e-06,
+        "kernel5/clean": 1.3113021850585938e-06,
+        "kernel5/occluded": 1.043081283569336e-06,
+        "kernel7/clean": 1.430511474609375e-06,
+        "kernel7/occluded": 1.996755599975586e-06,
+        "deep/clean": 4.202127456665039e-06,
+        "deep/occluded": 6.079673767089844e-06,
+        "residual/clean": 5.185604095458984e-06,
+        "residual/occluded": 4.291534423828125e-06,
+        "residual_cutout/clean": 3.7848949432373047e-06,
+        "residual_cutout/occluded": 5.602836608886719e-06
+      },
+      "table_rows_against_results": 28,
+      "per_class_metrics_checked": 200,
+      "feature_models_recomputed": 3,
+      "bootstrap_intervals_recomputed": 3,
+      "bootstrap_resamples_per_interval": 2000
+    },
+    "pdf_checks": {
+      "status": "passed",
+      "pages": 14,
+      "a4": true,
+      "paragraph_heading_list_units_checked": 99,
+      "numeric_table_cells_checked": 169,
+      "pixel_identical_embedded_figures": {
+        "cross_validation.png": 4,
+        "accuracy_comparison.png": 5,
+        "kernel_weights.png": 10,
+        "features_early.png": 10,
+        "features_late.png": 11,
+        "input_sensitivity.png": 11,
+        "confusion_matrix.png": 13,
+        "misclassifications.png": 14
+      },
+      "vector_curve_pages": {
+        "6": [
+          "baseline",
+          "no_normalization",
+          "deep"
+        ],
+        "7": [
+          "selected",
+          "kernel5",
+          "residual"
+        ],
+        "8": [
+          "dropout_variant",
+          "kernel7",
+          "residual_cutout"
+        ]
+      },
+      "reference_links_checked": 7,
+      "pages_visually_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "page_checks": [
+        {
+          "page": 1,
+          "outside_safe_area": 0
+        },
+        {
+          "page": 2,
+          "outside_safe_area": 0
+        },
+        {
+          "page": 3,
+          "outside_safe_area": 0
+        },
+        {
+          "page": 4,
+          "outside_safe_area": 0
+        },
+        {
+          "page": 5,
+          "outside_safe_area": 0
+        },
+        {
+          "page": 6,
+          "outside_safe_area": 0
+        },
+        {
+          "page": 7,
+          "outside_safe_area": 0
+        },
+        {
+          "page": 8,
+          "outside_safe_area": 0
+        },
+        {
+          "page": 9,
+          "outside_safe_area": 0
+        },
+        {
+          "page": 10,
+          "outside_safe_area": 0
+        },
+        {
+          "page": 11,
+          "outside_safe_area": 0
+        },
+        {
+          "page": 12,
+          "outside_safe_area": 0
+        },
+        {
+          "page": 13,
+          "outside_safe_area": 0
+        },
+        {
+          "page": 14,
+          "outside_safe_area": 0
+        }
+      ],
+      "pdf_sha256": "52f11b42b6034d3467271e1f9ce28ed705e51e393e58fe8d933f6735a0aecad9",
+      "markdown_sha256": "aabe9c55fe3a4c94b94e0fb1e064a36f5a686730f2661c5a08c770f4b2d5092c",
+      "date_local": "2026-10-23"
+    },
+    "requirements": {
+      "basic_cifar10_cnn": {
+        "status": "passed",
+        "pdf_pages": [
+          2,
+          3,
+          5,
+          6,
+          7,
+          8
+        ],
+        "evidence": [
+          "src/cifar10_lab/models.py",
+          "src/cifar10_lab/experiment.py",
+          "results/runs/",
+          "results/test_metrics.json"
+        ]
+      },
+      "basic_dropout_and_normalization": {
+        "status": "passed",
+        "pdf_pages": [
+          2,
+          3,
+          4,
+          9
+        ],
+        "normalizations": [
+          "BatchNorm",
+          "InstanceNorm",
+          "LayerNorm",
+          "GroupNorm"
+        ],
+        "no_normalization_control": true,
+        "dropout_probabilities": [
+          0,
+          0.2,
+          0.5
+        ],
+        "formal_controlled_ablation": true
+      },
+      "basic_cross_validation": {
+        "status": "passed",
+        "pdf_pages": [
+          3,
+          4
+        ],
+        "configurations": 15,
+        "folds_per_configuration": 3,
+        "completed_fold_runs": 45,
+        "epochs_per_fold": 3,
+        "test_used_for_selection": false
+      },
+      "bonus_performance_methods": {
+        "status": "passed",
+        "pdf_pages": [
+          5,
+          9,
+          12
+        ],
+        "methods": [
+          "depth",
+          "residual",
+          "Cutout",
+          "equal_probability_ensemble"
+        ],
+        "ensemble_clean_accuracy": 0.8808
+      },
+      "bonus_kernel_visualization": {
+        "status": "passed",
+        "pdf_pages": [
+          9,
+          10,
+          11,
+          12
+        ],
+        "kernel_sizes": [
+          3,
+          5,
+          7
+        ],
+        "visualizations": [
+          "kernel_weights",
+          "early_features",
+          "late_features",
+          "input_sensitivity"
+        ],
+        "parameter_and_timing_comparison": true
+      },
+      "bonus_limitations_and_solutions": {
+        "status": "passed",
+        "pdf_pages": [
+          12,
+          13,
+          14
+        ],
+        "deficiencies": [
+          "train_validation_gap",
+          "occlusion_sensitivity",
+          "class_confusion_and_spatial_detail"
+        ],
+        "validated_solution": "Cutout",
+        "occluded_accuracy_before": 0.7681,
+        "occluded_accuracy_after": 0.8319,
+        "occluded_improvement_percentage_points": 6.38,
+        "future_proposals_marked_as_follow_up": true
+      }
+    },
+    "limitations_confirmed": [
+      "one final training seed",
+      "three-epoch CV screening on a training subset",
+      "unequal parameter counts in kernel and residual comparisons",
+      "one fixed central occlusion condition",
+      "three feature examples and one input-gradient example"
+    ],
+    "implementation_and_report_changes_required": false,
+    "pdf_rechecked_date_local": "2026-10-23"
+  },
+  "report_result_coverage": {
+    "date_local": "2026-10-23",
+    "timezone": "Asia/Shanghai",
+    "experiment_group_coverage": "complete",
+    "recorded_result_detail_coverage": "partial",
+    "reported_numeric_values_match_saved_results": true,
+    "report_sha256": "aabe9c55fe3a4c94b94e0fb1e064a36f5a686730f2661c5a08c770f4b2d5092c",
+    "pdf_sha256": "52f11b42b6034d3467271e1f9ce28ed705e51e393e58fe8d933f6735a0aecad9",
+    "checked": {
+      "cv_configurations": 15,
+      "cv_fold_runs": 45,
+      "cv_epoch_records": 135,
+      "formal_models": 9,
+      "ensemble_models": 1,
+      "formal_epoch_records": 180,
+      "test_model_conditions": 20,
+      "per_class_metric_rows": 200,
+      "reported_result_table_rows": 39,
+      "narrative_accuracy_differences": 11,
+      "top_class_confusions": 3,
+      "report_figures": 9
+    },
+    "covered": {
+      "cv_mean_and_std": 15,
+      "final_model_summary_rows": 10,
+      "formal_accuracy_curve_models": 9,
+      "kernel_comparisons": 3,
+      "feature_metric_rows": 3,
+      "paired_intervals": 3,
+      "generalization_gap_models": [
+        "baseline",
+        "selected",
+        "deep",
+        "residual",
+        "residual_cutout"
+      ],
+      "timing_models": [
+        "selected",
+        "kernel5",
+        "kernel7"
+      ]
+    },
+    "missing_details": [
+      {
+        "id": "cv_fold_accuracies",
+        "saved": 45,
+        "reported_individually": 0,
+        "evidence": [
+          "results/cross_validation.json",
+          "results/cv/"
+        ],
+        "example_selected_fold_accuracy_percent": [
+          53.07,
+          49.8,
+          51.73
+        ]
+      },
+      {
+        "id": "training_and_validation_loss",
+        "formal_models": 9,
+        "epochs_each": 20,
+        "loss_values_saved": 360,
+        "reported_loss_curve_models": 0,
+        "evidence": [
+          "results/runs/*/history.csv",
+          "src/cifar10_lab/report.py:plot_curves"
+        ]
+      },
+      {
+        "id": "generalization_gap",
+        "saved_models": 9,
+        "reported_models": 5,
+        "missing_models": {
+          "dropout_variant": {
+            "clean_train_accuracy_percent": 84.35,
+            "validation_accuracy_percent": 81.91,
+            "gap_percentage_points": 2.44
+          },
+          "no_normalization": {
+            "clean_train_accuracy_percent": 78.85,
+            "validation_accuracy_percent": 76.54,
+            "gap_percentage_points": 2.31
+          },
+          "kernel5": {
+            "clean_train_accuracy_percent": 87.16,
+            "validation_accuracy_percent": 82.87,
+            "gap_percentage_points": 4.29
+          },
+          "kernel7": {
+            "clean_train_accuracy_percent": 87.34,
+            "validation_accuracy_percent": 82.25,
+            "gap_percentage_points": 5.09
+          }
+        },
+        "evidence": [
+          "results/runs/*/summary.json"
+        ]
+      },
+      {
+        "id": "occluded_macro_f1",
+        "saved_models": 10,
+        "reported_models": 0,
+        "values": {
+          "baseline": 0.7053223062334864,
+          "selected": 0.7355665018345923,
+          "dropout_variant": 0.7243578372769104,
+          "no_normalization": 0.7008678572815896,
+          "kernel5": 0.7461406190135556,
+          "kernel7": 0.7373453406974108,
+          "deep": 0.7619209696950008,
+          "residual": 0.7649344045380957,
+          "residual_cutout": 0.8311383752832849,
+          "ensemble": 0.8201495074967152
+        },
+        "evidence": [
+          "results/test_metrics.json"
+        ]
+      },
+      {
+        "id": "per_class_metrics_and_confusion_matrices",
+        "saved_per_class_rows": 200,
+        "reported_per_class_metric_tables": 0,
+        "saved_confusion_matrices": 20,
+        "reported_confusion_matrices": [
+          "ensemble/clean"
+        ],
+        "evidence": [
+          "results/test_metrics.json",
+          "figures/confusion_matrix.png"
+        ]
+      },
+      {
+        "id": "full_model_timing",
+        "saved_models": 9,
+        "reported_models": 3,
+        "missing_model_seconds": {
+          "baseline": 78.1,
+          "dropout_variant": 99.5,
+          "no_normalization": 77.1,
+          "deep": 215.4,
+          "residual": 245.2,
+          "residual_cutout": 246.8
+        },
+        "evidence": [
+          "results/runs/*/summary.json"
+        ]
+      }
+    ],
+    "scope_notes": [
+      "Experiment groups required by the assignment are represented.",
+      "Complete coverage of saved result details is a separate, stricter criterion.",
+      "Per-image probability arrays, model weights, and exact epoch logs may remain in supporting files.",
+      "Gradient pixel fractions are redundant with the reported counts and 32 by 32 input dimensions."
+    ],
+    "pdf_checks": {
+      "status": "passed",
+      "pages": 14,
+      "a4": true,
+      "paragraph_heading_list_units_checked": 99,
+      "numeric_table_cells_checked": 169,
+      "pixel_identical_embedded_figures": {
+        "cross_validation.png": 4,
+        "accuracy_comparison.png": 5,
+        "kernel_weights.png": 10,
+        "features_early.png": 10,
+        "features_late.png": 11,
+        "input_sensitivity.png": 11,
+        "confusion_matrix.png": 13,
+        "misclassifications.png": 14
+      },
+      "vector_curve_pages": {
+        "6": [
+          "baseline",
+          "no_normalization",
+          "deep"
+        ],
+        "7": [
+          "selected",
+          "kernel5",
+          "residual"
+        ],
+        "8": [
+          "dropout_variant",
+          "kernel7",
+          "residual_cutout"
+        ]
+      },
+      "reference_links_checked": 7,
+      "pages_visually_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "page_checks": [
+        {
+          "page": 1,
+          "outside_safe_area": 0
+        },
+        {
+          "page": 2,
+          "outside_safe_area": 0
+        },
+        {
+          "page": 3,
+          "outside_safe_area": 0
+        },
+        {
+          "page": 4,
+          "outside_safe_area": 0
+        },
+        {
+          "page": 5,
+          "outside_safe_area": 0
+        },
+        {
+          "page": 6,
+          "outside_safe_area": 0
+        },
+        {
+          "page": 7,
+          "outside_safe_area": 0
+        },
+        {
+          "page": 8,
+          "outside_safe_area": 0
+        },
+        {
+          "page": 9,
+          "outside_safe_area": 0
+        },
+        {
+          "page": 10,
+          "outside_safe_area": 0
+        },
+        {
+          "page": 11,
+          "outside_safe_area": 0
+        },
+        {
+          "page": 12,
+          "outside_safe_area": 0
+        },
+        {
+          "page": 13,
+          "outside_safe_area": 0
+        },
+        {
+          "page": 14,
+          "outside_safe_area": 0
+        }
+      ],
+      "pdf_sha256": "52f11b42b6034d3467271e1f9ce28ed705e51e393e58fe8d933f6735a0aecad9",
+      "markdown_sha256": "aabe9c55fe3a4c94b94e0fb1e064a36f5a686730f2661c5a08c770f4b2d5092c",
+      "date_local": "2026-10-23"
+    },
+    "accepted_scope": "basic task and three bonus tasks",
+    "required_report_changes": false
+  },
+  "report_language_checks": {
+    "status": "passed",
+    "generator_matches_report": true,
+    "manual_prose_review": "affirmative experimental methods and observations",
+    "negative_clause_matches": 0,
+    "disclaimer_matches": 0,
+    "experiment_artifacts_unchanged": 193,
+    "markdown_sha256": "aabe9c55fe3a4c94b94e0fb1e064a36f5a686730f2661c5a08c770f4b2d5092c",
+    "generator_sha256": "feeab113cb4d9b4688a45d2b8a620c7a3b6cb2dd0f7a3924e4b7793186b2c954",
+    "date_local": "2026-10-23",
+    "timezone": "Asia/Shanghai",
+    "pdf_negative_clause_matches": 0,
+    "pdf_disclaimer_matches": 0,
+    "pdf_sha256": "52f11b42b6034d3467271e1f9ce28ed705e51e393e58fe8d933f6735a0aecad9",
+    "numeric_table_cells_preserved": 169,
+    "required_experiment_results_preserved": true
+  },
+  "requirement_explanations": {
+    "report": true,
+    "notebook": true,
+    "source_comments": true,
+    "chinese_metric_labels": true,
+    "syntax_check": "passed",
+    "generator_content_check": "passed"
+  }
+}

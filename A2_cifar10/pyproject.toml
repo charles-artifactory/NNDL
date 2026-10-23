@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "a2-cifar10"
+version = "0.1.0"
+description = "A2 convolutional network experiments on CIFAR-10"
+requires-python = ">=3.11"
+dependencies = ["torch>=2.5", "torchvision>=0.20", "numpy>=1.26", "matplotlib>=3.8", "scikit-learn>=1.4"]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+notebook = ["ipykernel>=6", "nbformat>=5", "nbclient>=0.10"]
+
+[project.scripts]
+cifar10-experiment = "cifar10_lab.experiment:main"
+cifar10-report = "cifar10_lab.report:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

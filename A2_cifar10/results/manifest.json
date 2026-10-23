@@ -1,0 +1,41 @@
+{
+  "config": {
+    "seed": 42,
+    "device": "auto",
+    "threads": 4,
+    "batch_size": 256,
+    "epochs": 20,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0005,
+    "width": 32,
+    "cv_samples": 9000,
+    "cv_folds": 3,
+    "cv_epochs": 3,
+    "cv_batch_size": 256,
+    "normalizations": [
+      "none",
+      "batch",
+      "instance",
+      "layer",
+      "group"
+    ],
+    "dropout_rates": [
+      0.0,
+      0.2,
+      0.5
+    ],
+    "ensemble_members": [
+      "selected",
+      "deep",
+      "residual_cutout"
+    ],
+    "occlusion_size": 8
+  },
+  "config_sha256": "48b76887703900febc29d10f6d0a154c884f1c48c8a526a7c702521c5576c4f4",
+  "python": "3.11.14 (main, Oct 10 2025, 12:55:50) [Clang 20.1.4 ]",
+  "torch": "2.14.1",
+  "torchvision": "0.29.1",
+  "platform": "macOS-15.2-arm64-arm-64bit",
+  "device": "mps",
+  "strict_bitwise_reproducibility": false
+}

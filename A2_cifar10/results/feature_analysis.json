@@ -1,0 +1,36 @@
+{
+  "input_sensitivity": {
+    "selected": {
+      "target_class": "airplane",
+      "predicted_class": "airplane",
+      "pixels_for_90_percent_gradient": 762,
+      "fraction": 0.744140625
+    },
+    "kernel5": {
+      "target_class": "airplane",
+      "predicted_class": "airplane",
+      "pixels_for_90_percent_gradient": 763,
+      "fraction": 0.7451171875
+    },
+    "kernel7": {
+      "target_class": "airplane",
+      "predicted_class": "airplane",
+      "pixels_for_90_percent_gradient": 781,
+      "fraction": 0.7626953125
+    }
+  },
+  "representation": {
+    "selected": {
+      "early_spatial_entropy": 0.9867006130203895,
+      "late_spatial_entropy": 0.9928405656388426
+    },
+    "kernel5": {
+      "early_spatial_entropy": 0.982621671826101,
+      "late_spatial_entropy": 0.9951275622662411
+    },
+    "kernel7": {
+      "early_spatial_entropy": 0.9862786535864977,
+      "late_spatial_entropy": 0.9926853512964389
+    }
+  }
+}

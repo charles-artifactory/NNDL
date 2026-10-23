@@ -1,0 +1,23 @@
+{
+  "protocol": {
+    "model": {
+      "normalization": "batch",
+      "dropout": 0.0,
+      "kernel_size": 3,
+      "depth": 2,
+      "residual": true,
+      "width": 32
+    },
+    "epochs": 20,
+    "seed": 42,
+    "cutout": false,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0005
+  },
+  "parameters": 561354,
+  "receptive_field": 36,
+  "best_epoch": 19,
+  "best_validation_accuracy": 0.8804,
+  "clean_train_accuracy": 0.93785,
+  "seconds": 245.21622554099304
+}

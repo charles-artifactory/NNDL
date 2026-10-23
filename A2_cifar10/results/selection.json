@@ -1,0 +1,18 @@
+{
+  "criterion": "maximum mean of fold-best validation accuracies; grid order breaks ties",
+  "selected": {
+    "normalization": "batch",
+    "dropout": 0.0,
+    "fold_accuracies": [
+      0.5306666666666666,
+      0.498,
+      0.5173333333333333
+    ],
+    "mean_accuracy": 0.5153333333333333,
+    "std_accuracy": 0.01642491332633987
+  },
+  "cv_samples": 9000,
+  "folds": 3,
+  "epochs_per_fold": 3,
+  "test_used": false
+}

@@ -1,0 +1,114 @@
+{
+  "models": {
+    "baseline": {
+      "spec": {
+        "normalization": "none",
+        "dropout": 0,
+        "kernel_size": 3,
+        "depth": 1,
+        "residual": false,
+        "width": 32
+      },
+      "cutout": false
+    },
+    "selected": {
+      "spec": {
+        "normalization": "batch",
+        "dropout": 0.0,
+        "kernel_size": 3,
+        "depth": 1,
+        "residual": false,
+        "width": 32
+      },
+      "cutout": false
+    },
+    "dropout_variant": {
+      "spec": {
+        "normalization": "batch",
+        "dropout": 0.2,
+        "kernel_size": 3,
+        "depth": 1,
+        "residual": false,
+        "width": 32
+      },
+      "cutout": false
+    },
+    "no_normalization": {
+      "spec": {
+        "normalization": "none",
+        "dropout": 0.2,
+        "kernel_size": 3,
+        "depth": 1,
+        "residual": false,
+        "width": 32
+      },
+      "cutout": false
+    },
+    "kernel5": {
+      "spec": {
+        "normalization": "batch",
+        "dropout": 0.0,
+        "kernel_size": 5,
+        "depth": 1,
+        "residual": false,
+        "width": 32
+      },
+      "cutout": false
+    },
+    "kernel7": {
+      "spec": {
+        "normalization": "batch",
+        "dropout": 0.0,
+        "kernel_size": 7,
+        "depth": 1,
+        "residual": false,
+        "width": 32
+      },
+      "cutout": false
+    },
+    "deep": {
+      "spec": {
+        "normalization": "batch",
+        "dropout": 0.0,
+        "kernel_size": 3,
+        "depth": 2,
+        "residual": false,
+        "width": 32
+      },
+      "cutout": false
+    },
+    "residual": {
+      "spec": {
+        "normalization": "batch",
+        "dropout": 0.0,
+        "kernel_size": 3,
+        "depth": 2,
+        "residual": true,
+        "width": 32
+      },
+      "cutout": false
+    },
+    "residual_cutout": {
+      "spec": {
+        "normalization": "batch",
+        "dropout": 0.0,
+        "kernel_size": 3,
+        "depth": 2,
+        "residual": true,
+        "width": 32
+      },
+      "cutout": true
+    }
+  },
+  "ensemble_members": [
+    "selected",
+    "deep",
+    "residual_cutout"
+  ],
+  "ensemble_rule": "mean softmax probabilities",
+  "test_used_for_selection": false,
+  "occlusion": {
+    "location": "center",
+    "size": 8
+  }
+}
